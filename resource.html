@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 10;
+  bottom: 16;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 10%;
+  padding: 50px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="https://i.imgur.com/82d0a9U.mp4" type="Video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+<div dir="ltr" style="text-align: left;" trbidi="on">
+
+<center>
+
+<span id="countdown">.</span></center>
+
+<br />
+
+<div style="text-align: center;">
+
+
+
+<noscript>JavaScript needs to be enabled in order to be able to download.</noscript>
+
+<script type="application/javascript">
+
+(function(){
+
+   var message = "%d ";
+
+   // seconds before download link becomes visible
+
+   var count = 6;
+
+   var countdown_element = document.getElementById("countdown");
+
+   var download_link = document.getElementById("download_link");
+
+   var timer = setInterval(function(){
+
+      // if countdown equals 0, the next condition will evaluate to false and the else-construct will be executed
+
+      if (count) {
+
+          // display text
+
+          countdown_element.innerHTML = " %d ("%d", count);
+
+          // decrease counter
+
+          count--;
+
+      } else {
+
+          // stop timer
+
+          clearInterval(timer);
+
+          // hide countdown
+
+          countdown_element.style.display = "none";
+
+          // show download link
+
+          download_link.style.display = "";
+
+      }
+
+   }, 1000);
+
+})();
+
+</script></div></div>
+
+<!DOCTYPE html>
+<html>
+   <body>
+      <script>
+         setTimeout(function(){
+            window.location.href = 'homescreen.html';
+         }, 5000);
+      </script>
+      
+   </body>
+</html>
