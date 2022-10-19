@@ -56,6 +56,85 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 <!-- !Deleted from here -->
 
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">More Features</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="homescreen.html">Home</a>
+    <a href="tools.html">Tool</a>
+    <a href="#contact">About US</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
 
 
   <!-- Header -->
@@ -197,87 +276,6 @@ Setup Your Android Platform
 
 <!-- Evide vere endhelum add akk -->
 
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-    <h4><b>ABOUT US</b></h4>
-    <p>Texido meg. I'm Justine The Founder of this App and Website also i have two more partners in here who works and helps me for every single Resource, We're also here to Helps You to getting a Better Carrier in Technical Field and Cyberspace also. This all i Made for only an educational purposes please don't misused these resources at any time.</p>
-    <hr>
-    
-    <h4>the Technical Support that we have for you</h4>
-    <!-- Progress bars / Skills -->
-    <p>TOOLS</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:90%">90%</div>
-    </div>
-    <p>DEVELOPED APPS</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
-    </div>
-    <p>RESOURCE</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:90%">95%</div>
-    </div>
-    <p>
-      <a href="https://drive.google.com/file/d/16d8bvYSh85-g5PI2TgBXRiiD85kg3mIa/view"><button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
-        <i class="fa fa-download w3-margin-right"></i>Download Official App
-      </button></a>
-    </p>
-    <hr>
-    
-    <h4>HOW MUCH YOU NEED US?</h4>
-    <!-- Pricing Tables -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-third w3-margin-bottom">
-        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-black w3-xlarge w3-padding-32">NOOB</li>
-          <li class="w3-padding-16">CLARIFICATION ABOUT TERMUX</li>
-          <li class="w3-padding-16">TOOLS AND USAGE</li>
-          <li class="w3-padding-16">TOOL DETAILING</li>
-          <li class="w3-padding-16">24HR SUPPORT</li>
-          <li class="w3-padding-16">
-            <h3>TEXIDO MEG</h3>
-             <span class="w3-opacity">CLICK ON THE CONTACT BUTTON TO MESSAGE USE DIRECTLY</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-teal w3-padding-large w3-hover-black">CONTACT</button>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="w3-third w3-margin-bottom">
-        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-teal w3-xlarge w3-padding-32">INTERMEDIATE</li>
-          <li class="w3-padding-16">TERMUX UPDATION</li>
-          <li class="w3-padding-16">TOOLS AND INOVATIONS</li>
-          <li class="w3-padding-16">APP'S PROPER UPDATION</li>
-          <li class="w3-padding-16">ASK DOUBTS</li>
-          <li class="w3-padding-16">
-            <h3>TEXIDO MEG</h3>
-             <span class="w3-opacity">CLICK ON THE CONTACT BUTTON TO MESSAGE USE DIRECTLY</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-teal w3-padding-large w3-hover-black">CONTACT</button>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="w3-third">
-        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-black w3-xlarge w3-padding-32">PROFESSIONAL</li>
-          <li class="w3-padding-16">PAYLOAD TOOLS</li>
-          <li class="w3-padding-16">PENETRATION SUPPORT</li>
-          <li class="w3-padding-16">FREE RESOURCES</li>
-          <li class="w3-padding-16">INOVATIVE SUPPORT</li>
-          <li class="w3-padding-16">
-            <h3>TEXIDO MEG</h3>
-             <span class="w3-opacity">CLICK ON THE CONTACT BUTTON TO MESSAGE USE DIRECTLY</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-teal w3-padding-large w3-hover-black">CONTACT</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
   
   <!-- Contact Section -->
   <div class="w3-container w3-padding-large w3-grey">
