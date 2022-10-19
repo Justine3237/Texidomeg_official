@@ -1,142 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>TEXIDOMEG</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
-}
-
-#myVideo {
-  position: fixed;
-  right: 10;
-  bottom: 16;
-  min-width: 100%; 
-  min-height: 100%;
-}
-
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 10%;
-  padding: 50px;
-}
-
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
 </style>
 </head>
-<body>
+<body class="w3-content w3-black" style="max-width:1500px;">
+
+<!-- Header with Slideshow -->
+<header class="w3-display-container w3-center">
+  <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" onclick="document.getElementById('download').style.display='block'">Supported In <i class="fa fa-android"></i> <i class="fa fa-windows"></i></button>
+  <div class="mySlides w3-animate-opacity">
+    <video autoplay muted loop id="myVideo">
+  <source src="https://i.imgur.com/82d0a9U.mp4" type="Video/mp4">
+  Your browser does not support HTML5 video.
+</video> alt="Image 1" style="min-width:50px" width="1500" height="1000">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge">Ban Number using app</h1>
+        <hr class="w3-opacity">
+        <p>Super simple installment: free of charge</p>
+        <p><button class="w3-button w3-block w3-green w3-round" onclick="document.getElementById('download').style.display='block'">Supported <i class="fa fa-android"></i>  <i class="fa fa-windows"></i></button></p>
+      </div>
+    </div>
+  </div>
 
 <video autoplay muted loop id="myVideo">
   <source src="https://i.imgur.com/82d0a9U.mp4" type="Video/mp4">
   Your browser does not support HTML5 video.
 </video>
-
-
-
-<script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
-
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
-</script>
-
-</body>
-</html>
-
-
-<div dir="ltr" style="text-align: left;" trbidi="on">
-
-<center>
-
-<span id="countdown">.</span></center>
-
-<br />
-
-<div style="text-align: center;">
-
-
-
-<noscript>JavaScript needs to be enabled in order to be able to download.</noscript>
-
-<script type="application/javascript">
-
-(function(){
-
-   var message = "%d ";
-
-   // seconds before download link becomes visible
-
-   var count = 6;
-
-   var countdown_element = document.getElementById("countdown");
-
-   var download_link = document.getElementById("download_link");
-
-   var timer = setInterval(function(){
-
-      // if countdown equals 0, the next condition will evaluate to false and the else-construct will be executed
-
-      if (count) {
-
-          // display text
-
-          countdown_element.innerHTML = " %d ("%d", count);
-
-          // decrease counter
-
-          count--;
-
-      } else {
-
-          // stop timer
-
-          clearInterval(timer);
-
-          // hide countdown
-
-          countdown_element.style.display = "none";
-
-          // show download link
-
-          download_link.style.display = "";
-
-      }
-
-   }, 1000);
-
-})();
-
-</script></div></div>
 
 <!DOCTYPE html>
 <html>
